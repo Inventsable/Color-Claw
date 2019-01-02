@@ -1,0 +1,18 @@
+<svg id="doc" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #a1a1a1;
+      }
+    </style>
+  </defs>
+  <title>doc</title>
+  <rect id="frame" class="cls-1" width="30" height="30"/>
+  <polygon class="cls-2" points="22.44 8.85 17.15 8.85 17.15 3.56 22.44 8.85"/>
+  <polygon class="cls-2" points="22.44 8.85 17.15 8.85 17.15 3.56 22.44 8.85"/>
+  <path class="cls-2" d="M309,134v17H293V127h9v6a1,1,0,0,0,1,1Z" transform="translate(-286 -124)"/>
+</svg>

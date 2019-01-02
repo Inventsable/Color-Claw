@@ -1,0 +1,20 @@
+<svg id="both" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #a1a1a1;
+      }
+    </style>
+  </defs>
+  <title>both</title>
+  <rect class="cls-1" width="30" height="30"/>
+  <rect class="cls-1" width="30" height="30"/>
+  <rect class="cls-2" x="6" y="6" width="18" height="18"/>
+  <rect class="cls-1" width="30" height="30"/>
+  <rect class="cls-2" x="6" y="6" width="18" height="18"/>
+  <path class="cls-2" d="M313.5,152.5h-25a1,1,0,0,1-1-1v-25a1,1,0,0,1,1-1h25a1,1,0,0,1,1,1v25A1,1,0,0,1,313.5,152.5Zm-24-2h23v-23h-23Z" transform="translate(-286 -124)"/>
+</svg>

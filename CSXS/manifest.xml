@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ExtensionManifest ExtensionBundleId="inventsable.color-claw" ExtensionBundleVersion="1.0.0" Version="7.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <ExtensionList>
+    <Extension Id="inventsable.color-claw.panel" Version="1.0.0" />
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PHXS" Version="[20,99.9]" />
+      <Host Name="ILST" Version="[23,99.9]" />
+      <Host Name="AEFT" Version="[16,99.9]" />
+    </HostList>
+    <LocaleList>
+      <Locale Code="All" />
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="7.0" />
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="inventsable.color-claw.panel">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./client/index.html</MainPath>
+          <CEFCommandLine />
+        </Resources>
+        <Lifecycle>
+          <AutoVisible>true</AutoVisible>
+        </Lifecycle>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>color-claw</Menu>
+          <Geometry>
+            <Size>
+              <Height>200</Height>
+              <Width>200</Width>
+            </Size>
+            <MaxSize>
+              <Height>400</Height>
+              <Width>600</Width>
+            </MaxSize>
+            <MinSize>
+              <Height>100</Height>
+              <Width>70</Width>
+            </MinSize>
+          </Geometry>
+          <Icons>
+             <Icon Type="Normal">./assets/iconLight.png</Icon>
+             <Icon Type="RollOver">./assets/iconLightRollover.png</Icon>
+          </Icons>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

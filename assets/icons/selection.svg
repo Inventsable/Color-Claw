@@ -1,0 +1,16 @@
+<svg id="selection" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #a1a1a1;
+      }
+    </style>
+  </defs>
+  <title>selection</title>
+  <rect id="frame" class="cls-1" width="30" height="30"/>
+  <path class="cls-2" d="M312.53,143.56l-18.38-18.15a1,1,0,0,0-1.7.71v25.76a1,1,0,0,0,.61.92,1.09,1.09,0,0,0,.39.08,1,1,0,0,0,.7-.29l7.32-7.32h10.35a1,1,0,0,0,.71-1.71Zm-11.47-.29a1,1,0,0,0-.71.29l-5.9,5.91v-21l14.94,14.76Z" transform="translate(-286 -124)"/>
+</svg>

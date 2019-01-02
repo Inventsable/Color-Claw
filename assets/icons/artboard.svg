@@ -1,0 +1,18 @@
+<svg id="artboard" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #a1a1a1;
+      }
+    </style>
+  </defs>
+  <title>artboard</title>
+  <rect id="frame" class="cls-1" width="30" height="30"/>
+  <path class="cls-2" d="M294,149h-7V125h19v11H294Zm-5-2h3V134h12v-7H289Z" transform="translate(-286 -124)"/>
+  <path class="cls-2" d="M294,149h-7V125h19v11H294Zm-5-2h3V134h12v-7H289Z" transform="translate(-286 -124)"/>
+  <path class="cls-2" d="M315,153H292V134h23Zm-21-2h19V136H294Z" transform="translate(-286 -124)"/>
+</svg>

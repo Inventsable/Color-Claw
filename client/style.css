@@ -1,0 +1,191 @@
+:root {
+    /* --color-red-500: #bc5757;
+    --color-green-500: #57bc57;
+    --color-blue-500: #5757bc; */
+
+    --color-anim-main: #46a0f5;
+
+    --color-selection: #46a0f5;
+    --color-class: #ffca23;
+    --color-id: #50db29;
+
+    --color-native-selection: #46a0f5;
+}
+
+
+.anim-main {
+    fill: var(--color-anim-main);
+    stroke: var(--color-anim-main);
+    transition: fill 100ms var(--quart) 20ms,
+              stroke 100ms var(--quart) 20ms;
+}
+
+.anim-mask {
+    fill: var(--color-bg);
+}
+
+
+.label {
+    margin-right: .25rem;
+    width: .75rem;
+    height: 2.35rem;
+    /* box-sizing: border-box; */
+    border-radius: 2px;
+    border-style: solid;
+    border-width: 0px;
+    /* border-width: 0px 0px 1px 0px; */
+    /* border: 1.5px solid var(--color-input-idle); */
+    /* box-shadow: .125rem .125rem 2rem rgba(0,0,0,.25); */
+    /* border-radius: calc(var(--borderRadius)/2); */
+    cursor: pointer;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red; */
+    cursor: pointer;
+    padding: 1rem 2rem;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.placeholder-anim {
+    min-width: 5rem;
+    min-height: 5rem;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255,255,255,.05);
+    /* border: 2px solid green; */
+}
+
+.placeholder-anim:hover {
+    background-color: rgba(255,255,255,.15);
+}
+
+.placeholder-text {
+    width: 100%;
+    margin-top: 1rem;
+    color: var(--color-text-default);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    /* word-spacing: .25rem; */
+    letter-spacing: .25rem;
+    font-family: 'Raleway';
+}
+
+
+.button {
+    /* width: 2rem; */
+    /* color: var(--color-text-default); */
+    padding: .5rem 1rem;
+    border-style: solid;
+    border-width: 0px 0px 1.35px 0px;
+    border-color: white;
+    cursor: pointer;
+    /* border: 2px solid green; */
+}
+
+.appToolbar {
+    /* border: 2px solid red; */
+    height: var(--toolbar-height);
+    margin: 0px .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+}
+
+.intuition {
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: .25rem;
+    cursor: default;
+    user-select: none;
+}
+
+.rightHand {
+    margin-right: .25rem;
+    border-color: rgba(255,255,255,.05);
+    border-style: solid;
+    /* border-width: 0px 2px 0px 2px; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+body {
+    overflow: hidden;
+}
+
+input, textarea {
+    font-family: 'Roboto', sans-serif;
+    white-space: nowrap;
+}
+
+.testGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.extra-btn {
+    width: 2rem;
+    height: 2.35rem;
+    margin-left: .375rem;
+    /* background-color: var(--color-input-idle); */
+    border-radius: var(--borderRadius);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.appBottom {
+    display: flex;
+    align-items: baseline;
+    /* margin-bottom: .25rem; */
+}
+
+
+.foot {
+    user-select: none;
+    cursor: default;
+    /* border: 2px solid red; */
+    margin-left: .5rem;
+    margin-top: .5rem;
+    font-family: 'Raleway';
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .125rem;
+    display: flex;
+    align-items: baseline;
+}
+
+@media screen and (min-width:600px) {
+    .testGrid {
+        justify-content: flex-start;
+        margin-left: 1%;
+    }
+}
+
+
+@media screen and (max-width:251px) {
+    .placeholder {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .placeholder-text {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,16 @@
+<svg id="stroke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #a1a1a1;
+      }
+    </style>
+  </defs>
+  <title>stroke</title>
+  <rect class="cls-1" width="30" height="30"/>
+  <path class="cls-2" d="M313,152.5H289a1.5,1.5,0,0,1-1.5-1.5V127a1.5,1.5,0,0,1,1.5-1.5h24a1.5,1.5,0,0,1,1.5,1.5v24A1.5,1.5,0,0,1,313,152.5Zm-22.5-3h21v-21h-21Z" transform="translate(-286 -124)"/>
+</svg>

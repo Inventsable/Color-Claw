@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExtensionList>
+    <Extension Id="inventsable.color-claw.panel">
+        <HostList>
+            <Host Name="ILST" Port="2121"/>
+            <Host Name="PHXS" Port="2122"/>
+            <Host Name="AEFT" Port="2123"/>
+        </HostList>
+    </Extension>
+</ExtensionList>

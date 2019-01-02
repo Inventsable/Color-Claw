@@ -1,0 +1,304 @@
+:root {
+  font-size: 12px;
+  --quad: cubic-bezier(0.48, 0.04, 0.52, 0.96);
+  --quart: cubic-bezier(0.76, 0.00, 0.24, 1.00);
+  --quint: cubic-bezier(0.84, 0.00, 0.16, 1.00);
+
+  --color-null: #4a4a4a;
+  --color-debug: #46a0f5;
+
+  /* CSS variables reactively change via component */
+  --color-bg: #323232;
+  --color-icon: #a1a1a1;
+  --color-border: #3e3e3e;
+  --color-scrollbar: #2a2a2a;
+  --color-scrollbar-thumb: #3e3e3e;
+  --color-scrollbar-thumb-hover: #525252;
+  --color-button-hover: #292929;
+  --color-button-active: #1f1f1f;
+  --color-button-disabled: #393939;
+  /* --color-selection: #46a0f5; */
+  --color-text-active: #1b1b1b;
+  --color-text-default: #a1a1a1;
+  --color-text-disabled: #525252;
+  --color-input-focus: #fcfcfc;
+  --color-input-idle: #262626;
+  --scrollbar-width: 20px;
+  --scrollbar-thumb-width: 16px;
+  --scrollbar-thumb-radius: 20px;
+  --panel-height: 50px;
+  --panel-width: 50px;
+  --screen-height: calc(var(--toolbar-height)*2);
+  /*  */
+  
+  --toolbar-height: 2rem;
+
+  --color-note-mid: #2e7d32;
+  --color-note-dark: #005005;
+  --color-note-icon: #fff;
+  --color-cancel: #D32F2F;
+  --font-size: .875rem;
+  color: var(--color-text-default);
+  font-family: Rubik;
+  /* margin: .5rem 0px; */
+  background-color: var(--color-bg);
+  transition: background-color 80ms var(--quad) 20ms;
+}
+
+html {
+  box-sizing: border-box;
+  height: calc(100vh - .65rem);
+  /* width: 97.5vw; */
+  /* border: 2px solid blue; */
+  width: 100vw;
+  margin: 0px;
+  padding: 0px;
+}
+
+svg { width: 100%; }
+
+.icon {
+  display: block;
+  width: 1.8rem;
+  height: 1.8rem;
+  min-width: 1.8rem;
+  min-height: 1.8rem;
+  margin-right: .5rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* display: none; */
+  background: var(--color-scrollbar);
+  /* width: var(--scrollbar-width); */
+}
+::-webkit-scrollbar-thumb {
+  /* width: var(--scrollbar-thumb-width); */
+  width: 10px;
+  background: var(--color-scrollbar-thumb);
+  border-radius: var(--scrollbar-thumb-radius);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-scrollbar-thumb-hover);
+}
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-resizer, ::-webkit-scrollbar-button {
+  display: none;
+}
+
+#app {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.appGrid {
+  border-width: 1.35px;
+  border-style: solid;
+  /* padding-right: .25rem; */
+  box-sizing: border-box;
+  /* width: 100%; */
+  /* overflow-x: hidden; */
+  /* overflow-y: auto; */
+}
+
+.appTop, .appMiddle, .appBottom {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+
+
+.appTop {
+  display: relative;
+  height: var(--toolbar-height);
+  /* order: -2; */
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: var(--color-bg);
+  /* opacity: .25; */
+}
+
+.appMiddle {
+  padding: .5rem;
+}
+
+.appBottom {
+  position: absolute;
+  top: calc(100vh - var(--toolbar-height));
+  left: 0px;
+  /* opacity: .25; */
+  /* border: 2px solid green; */
+  height: calc(var(--toolbar-height) * .75);
+  background-color: var(--color-bg);
+}
+
+.screen {
+  box-sizing: border-box;
+  /* border: 2px solid white; */
+  position: relative;
+  top: var(--toolbar-height);
+  height: calc(100vh - var(--screen-height));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+textarea, input { font-family: 'Roboto'; }
+
+.wrap-input {
+  box-sizing: border-box;
+  /* margin: 0px .25rem; */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 1rem;
+  width: 100%;
+  font-family: 'Rubik';
+}
+
+[class^="input-"] {
+  box-sizing: border-box;
+  border-style: solid;
+  border-width: 0px 0px 1.35px 0px;
+  /* border-radius: .25rem; */
+  padding: .5rem .5rem;
+  margin: .25rem;
+  min-height: 2rem;
+  outline-width: 0px;
+}
+
+.input-active, .input-idle {
+  /* border-color: var(--color-border); */
+  background-color: var(--color-bg);
+  /* color: var(--color-text-default); */
+  transition: all 80ms var(--quad) 20ms;
+}
+ .input-active:focus, .input-idle:focus {
+  /* background-color: var(--color-input-focus); */
+  /* color: var(--color-text-active); */
+}
+textarea {
+  resize: none;
+  overflow: hidden;
+}
+
+.global-notification {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(100% - 2rem);
+  top: 0;
+  left: 0;
+  padding: .5rem 1rem;
+  margin: .5rem 1rem;
+  border-radius: .5rem;
+  background-color: green;
+  z-index: 100;
+  color: white;
+  font-weight: 400;
+  user-select: none;
+  height: auto;
+  overflow: hidden;
+  transition: height 200ms var(--quad) 20ms;
+  box-shadow: .5rem .5rem .5rem rgba(0,0,0,0.2);
+}
+
+.note-preview {
+  margin-top: .5rem;
+  height: 0px;
+  width: 100%;
+  padding-bottom: 56.25%;
+  position: relative;
+  background-color: var(--color-note-dark);
+}
+
+.note-list {
+  list-style: inside;
+  cursor: default;
+}
+.note-list > li {
+  margin: .25rem 0px;
+}
+
+.note-preview > div {
+  position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
+
+.global-notification-text {
+  color: white;
+  cursor: pointer;
+  text-decoration: underline;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+}
+
+.global-notification-wrap, .global-notification-details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0rem;
+  padding: .25rem 0px;
+  font-weight: 300;
+}
+
+.note-cancel {
+  width: 2rem;
+}
+
+.note-display {
+  width: 2rem;
+}
+
+.note-header {
+  flex-wrap: nowrap;
+  width: calc(100% - 3rem);
+  display: flex;
+  justify-content: center;
+  cursor: default;
+}
+
+.global-notification-toggle {
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+
+.note-icon {
+  cursor: pointer;
+  width: 1.8rem;
+  height: 1.8rem;
+}
+
+
+/* For notifications only */
+@media screen and (max-width:199px) {
+
+}
+@media screen and (max-width:119px) {
+  .global-notification-wrap {
+    flex-direction: column;
+  }
+  .global-notification {
+    padding: .5rem 0px;
+    margin: .5rem 0px;
+    width: 100%;
+  }
+  .global-notification-toggle {
+    width: 100%;
+    margin: 0px 0px;
+    padding: 0px;
+  }
+}

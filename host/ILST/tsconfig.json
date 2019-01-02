@@ -1,0 +1,18 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outFile": "./host.jsx",
+    "allowJs": true,
+    "noLib": true,
+    // "module": "commonjs",
+    "types": [
+      "types-for-adobe/illustrator/2015.3"
+    ]
+  },
+  "files": [
+    "host.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,18 @@
+<svg id="layers" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #a1a1a1;
+      }
+    </style>
+  </defs>
+  <title>layers</title>
+  <rect id="frame" class="cls-1" width="30" height="30"/>
+  <path class="cls-2" d="M301.61,144.76a1,1,0,0,1-1.22,0l-6.66-5.13L290,142.51,301,151l11-8.49-3.73-2.88Z" transform="translate(-286 -124)"/>
+  <path class="cls-2" d="M301.61,144.76a1,1,0,0,1-1.22,0l-6.66-5.13L290,142.51,301,151l11-8.49-3.73-2.88Z" transform="translate(-286 -124)"/>
+  <polygon class="cls-2" points="5.64 11.48 15 18.71 24.36 11.48 15 4.26 5.64 11.48"/>
+</svg>

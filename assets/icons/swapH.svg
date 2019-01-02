@@ -1,0 +1,16 @@
+<svg id="swapH" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #a1a1a1;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <title>swapH</title>
+  <polygon class="cls-1" points="0.46 15 7.54 22.07 7.54 17.5 9.46 17.5 20.54 17.5 22.46 17.5 22.46 22.07 29.54 15 22.46 7.93 22.46 12.5 20.54 12.5 9.46 12.5 7.54 12.5 7.54 7.93 0.46 15"/>
+  <rect class="cls-2" x="610" y="73" width="30" height="30" transform="translate(640 103) rotate(180)"/>
+</svg>
