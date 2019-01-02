@@ -2,7 +2,8 @@
 
 [Bodymovin'](https://aescripts.com/bodymovin/) helper/companion for color collection and ease of renaming for CSS selection.
 
-> [Full resolution version here looks better](https://gfycat.com/TanNearGroundbeetle)
+> Rigging a character for color in 30 seconds [(full resolution)](https://gfycat.com/TanNearGroundbeetle):
+
 ![](https://thumbs.gfycat.com/TanNearGroundbeetle-size_restricted.gif)
 
 
@@ -13,7 +14,7 @@
 
 ## Install
 
-Use [ZXPInstaller](https://zxpinstaller.com/) (or any alternative) with the latest ZXP build here.
+Use [ZXPInstaller](https://zxpinstaller.com/) (or any alternative) with the [latest ZXP build here](https://github.com/Inventsable/Color-Claw/blob/master/_builds/color-claw1.00.zxp).
 
 ``` bash
 # Or CEP dev:
