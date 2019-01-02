@@ -25,26 +25,26 @@ git clone https://github.com/Inventsable/color-collector.git
 
 ## Commands
 
->* Holding Alt prompts for `Collect All` (single null with expression controls as master source) on Enter:
+### Holding Alt prompts for `Collect All` (single null with expression controls as master source) on Enter:
 ![](https://thumbs.gfycat.com/DrearyCloudyCaterpillar-size_restricted.gif)
 
 
->* Alt + Arrow keys `Cycle Selector` as Fill/Stroke/Both:
+### Alt + Arrow keys `Cycle Selector` as Fill/Stroke/Both:
 ![](https://thumbs.gfycat.com/DenseFondEgret-size_restricted.gif)
 
->* Holding Cmd/Control prompts for `Select` on Enter (obeying Both/Fill/Stroke selector)
+### Holding Cmd/Control prompts for `Select` on Enter (obeying Both/Fill/Stroke selector)
 ![](https://thumbs.gfycat.com/CorruptVainAllensbigearedbat-size_restricted.gif)
 
 > * `New Coin` relaunches scanning and creation of inputs/claws (not the same as a full `Refresh`).
 
-> * `Scrub All` deletes all expressions in every color of shape layer fills/strokes in your comp, also deletes Null generated on `Collect All`.
+> * `Scrub All` deletes all expressions in every color of shape layer fills/strokes in your comp, also deletes the Null generated on `Collect All`. This doesn't discriminate -- known to break DUIK structure control colors and any third party expressions.
 
 ---
 
 ## Known Bugs
 
 * Attempting to launch the extension with a comp highlighted in the Project panel that's different than the one currently in viewer throws a scripting error. To fix, deselect comp in Project panel and refresh.
-* Layer crawling is strictly typed for assignment but not for deletion. Custom elements injected by other scripts (DUIK, Ouroboros, third-party panels that have expressions linking to colors) aren't safe from having their color expressions deleted on the `Scrub` command, but aren't written to in return.
+* `Scrub All` - Layer crawling is strictly typed for assignment but not for deletion. Custom elements injected by other scripts (DUIK, Ouroboros, third-party panels that have expressions linking to colors) aren't safe from having their color expressions deleted on the `Scrub` command, but aren't written to in return.
 
 # Want your animation on the title screen?
 
