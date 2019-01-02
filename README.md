@@ -2,8 +2,7 @@
 
 [Bodymovin'](https://aescripts.com/bodymovin/) helper/companion for color collection and ease of renaming for CSS selection.
 
-> Rigging a character for color in 30 seconds [(full resolution)](https://gfycat.com/TanNearGroundbeetle):
-
+> Rig all the colors of a character in 30 seconds [(full resolution)](https://gfycat.com/TanNearGroundbeetle):
 ![](https://thumbs.gfycat.com/TanNearGroundbeetle-size_restricted.gif)
 
 
@@ -35,6 +34,10 @@ git clone https://github.com/Inventsable/color-collector.git
 
 >* Holding Cmd/Control prompts for `Select` on Enter (obeying Both/Fill/Stroke selector)
 ![](https://thumbs.gfycat.com/CorruptVainAllensbigearedbat-size_restricted.gif)
+
+> * `New Coin` relaunches scanning and creation of inputs/claws (not the same as a full `Refresh`).
+
+> * `Scrub All` deletes all expressions in every color of shape layer fills/strokes in your comp, also deletes Null generated on `Collect All`.
 
 ---
 
