@@ -18,7 +18,7 @@ Use [ZXPInstaller](https://zxpinstaller.com/) (or any alternative) with the [lat
 ``` bash
 # Or CEP dev:
 # .../AppData/Roaming/Adobe/CEP/extensions
-git clone https://github.com/Inventsable/color-collector.git
+git clone https://github.com/Inventsable/color-claw.git
 ```
 
 ---
